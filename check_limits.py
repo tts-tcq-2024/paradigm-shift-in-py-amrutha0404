@@ -10,14 +10,14 @@ def check_soc_limit(soc):
     return False
   return True
 
-def charge_rate_limit(charge_rate):
+def check_charge_rate_limit(charge_rate):
   if charge_rate > 0.8:
     print('Charge rate is out of range!')
     return False
   return True
     
 def battery_is_ok(temperature, soc, charge_rate):
-  return check_temp_limit(temperature) and check_soc_limit(soc) and charge_rate_limit(charge_rate)
+  return check_temp_limit(temperature) and check_soc_limit(soc) and check_charge_rate_limit(charge_rate)
 
 if __name__ == '__main__':
   assert(battery_is_ok(25, 70, 0.7) is True)
