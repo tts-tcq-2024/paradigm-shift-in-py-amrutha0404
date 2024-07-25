@@ -33,7 +33,7 @@ jobs:
 
     - name: Run and collect coverage
       run: |
-          coverage run --branch Soundex.test.py
+          coverage run --branch check_limts_test.py
           coverage html
           coverage report
     - name: Upload coverage
