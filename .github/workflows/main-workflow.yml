@@ -33,7 +33,7 @@ jobs:
 
     - name: Run and collect coverage
       run: |
-          coverage run --branch check_limts_test.py
+          coverage run --branch check_limits_test.py
           coverage html
           coverage report
     - name: Upload coverage
