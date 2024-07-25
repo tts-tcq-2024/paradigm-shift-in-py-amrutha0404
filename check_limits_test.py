@@ -6,7 +6,7 @@ class TestBatteryMonitor(unittest.TestCase):
     def setUp(self):
         self.monitor = BatteryMonitor()
 
-     def test_battery_is_ok(self):
+    def test_battery_is_ok(self):
         # Test for a battery that is OK for all parameters
         self.monitor.configure_warnings(temperature=True, soc=True, charge_rate=True)
         self.assertTrue(self.monitor.battery_is_ok(25, 50, 0.5))  # All within acceptable range
