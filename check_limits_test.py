@@ -1,5 +1,5 @@
 import unittest
-from battery_monitor import BatteryMonitor
+from check_limits import BatteryMonitor
 
 class TestBatteryMonitor(unittest.TestCase):
 
