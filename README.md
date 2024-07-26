@@ -58,5 +58,5 @@ Shorten the Semantic distance
 - Object oriented to encapsulate state with actions
 - Apect oriented to capture repeating aspects
 
-##**info on Assignment**
+## **info on Assignment**
 Used **Extension 1: Early Warning** for solving the assignment
