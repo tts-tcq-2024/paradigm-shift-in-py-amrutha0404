@@ -8,8 +8,8 @@ class BatteryMonitor:
         return self.warning_config[limit_type] and is_approaching_limit(value, min_val, max_val, tolerance)
 
     def check_limits(self, value, min_val, max_val, tolerance, limit_type):
-        value_ok = is_within_range(value, min_val, max_val)
         warning_needed = self.should_warn(limit_type, value, min_val, max_val, tolerance)
+        value_ok = is_within_range(value, min_val, max_val)
         return value_ok, warning_needed
 
     def handle_warnings(self, is_parameter_within_limits, is_approaching_limit_alert, parameter_name):
